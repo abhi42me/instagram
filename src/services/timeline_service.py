@@ -7,7 +7,7 @@ class TimeLineService(object):
         channel_ids = channel_subscription_dao.get_user_subscriptions(user_id)
         timeline_images = []
         for channel_id in channel_ids:
-            image_ids = image_dao.get_top_channel_images(channel_id, 10)
+            image_ids = channel_dao.get_top_channel_images(channel_id, 10)
             timeline_images += image_ids
 
         return timeline_images

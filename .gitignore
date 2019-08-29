@@ -4,3 +4,4 @@ instagram.iml
 lib
 include
 bin
+*.pyc
