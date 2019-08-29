@@ -6,3 +6,7 @@ class Image(BaseModel):
         self.channel_id = channel_id
         self.path = path
         super().__init__()
+
+    def __str__(self) -> str:
+        return "Path: {}, User: {}, Channel: {}".format(self.path, self.created_by_id, self.channel_id)
+

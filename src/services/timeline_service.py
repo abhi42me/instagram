@@ -2,6 +2,8 @@ from data_layer.daos import user_dao, image_dao, channel_dao, channel_subscripti
 
 class TimeLineService(object):
 
+    # TODO
+    # start, limit
     @staticmethod
     def generate_timeline(user_id):
         channel_ids = channel_subscription_dao.get_user_subscriptions(user_id)
